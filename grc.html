@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRC Assessment Report Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: .4rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        section {
+            margin: 2rem auto;
+            width: 80%;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #003366;
+            font-size: 1.2rem;
+            margin-bottom: .3rem;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #003366;
+            color: white;
+        }
+        .input-box {
+            width: 95%; box-sizing: border-box; resize: none; white-space: normal;
+            padding: 10px;
+            margin-top: 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            border-bottom: 1px dashed black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 520px;
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            z-index: 1;
+            top: 35%;
+            left: 100%;
+            margin-left: 10px;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #003366;
+            color: white;
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GRC Assessment Report Template</h1>
+</header>
+
+<section>
+    <h2 class="tooltip" style="font-size: 1.8rem; margin-top: 2rem; text-align: center;">Introduction<span class="tooltiptext">Provide an overview of the GRC assessment and its objectives.</span></h2>
+    <table>
+        <tr>
+            <th>Section</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Company Overview</td>
+            <td><textarea class="input-box" placeholder="Roughnecks Incorporated Inc is a construction company specializing in large-scale commercial and residential projects." rows="2"></textarea></td>
+        </tr>
+        <tr>
+            <td>Purpose of Assessment</td>
+            <td><textarea class="input-box" placeholder="To assess compliance with ISO 27001 standards and identify potential risks." rows="2"></textarea></td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2 class="tooltip" style="font-size: 1.8rem; margin-top: 2rem; text-align: center;">Assessment Summary
+        <span class="tooltiptext">Summarize the key findings from the assessment.</span>
+    </h2>
+    <table>
+        <tr>
+            <th>Key Finding</th>
+            <th>Risk Level</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Data Protection Measures</td>
+            <td><textarea class="input-box" placeholder="High" rows="3"></textarea></td>
+            <td><textarea class="input-box" placeholder="Data protection protocols are insufficient, especially regarding encryption for sensitive data." rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td>Access Control</td>
+            <td><textarea class="input-box" placeholder="Medium" rows="3"></textarea></td>
+            <td><textarea class="input-box" placeholder="Access control measures are outdated, and multi-factor authentication is not yet implemented." rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td>Backup Procedures</td>
+            <td><textarea class="input-box" placeholder="Low" rows="3"></textarea></td>
+            <td><textarea class="input-box" placeholder="Backup procedures are compliant with industry standards, ensuring data availability in the event of a system failure." rows="4"></textarea></td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2 class="tooltip" style="font-size: 1.8rem; margin-top: 2rem; text-align: center;">Risk Mitigation
+        <span class="tooltiptext">Describe actions that will mitigate identified risks.</span>
+    </h2>
+    <table>
+        <tr>
+            <th>Risk</th>
+            <th>Mitigation Action</th>
+            <th>Deadline</th>
+        </tr>
+        <tr>
+            <td>Data Protection</td>
+            <td><textarea class="input-box" placeholder="Implement encryption for sensitive data, update data handling policies, and train staff." rows="3"></textarea></td>
+            <td><textarea class="input-box" placeholder="30 days" rows="3"></textarea></td>
+        </tr>
+        <tr>
+            <td>Access Control</td>
+            <td><textarea class="input-box" placeholder="Update employee access rights and implement multi-factor authentication." rows="2"></textarea></td>
+            <td><textarea class="input-box" placeholder="60 days" rows="2"></textarea></td>
+        </tr>
+    </table>
+</section>
+
+<section>
+    <h2 class="tooltip" style="font-size: 1.8rem; margin-top: 2rem; text-align: center;">Recommendations
+        <span class="tooltiptext">Provide both short-term and long-term recommendations.</span>
+    </h2>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Recommendation</th>
+        </tr>
+        <tr>
+            <td>Short-Term</td>
+            <td><textarea class="input-box" placeholder="Address high-risk vulnerabilities such as insufficient data protection." rows="1"></textarea></td>
+        </tr>
+        <tr>
+            <td>Long-Term</td>
+            <td><textarea class="input-box" placeholder="Conduct quarterly GRC assessments and employee training programs." rows="1"></textarea></td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+    <p>&copy; 2024 GRC Assessment Report Template | Presented by Guillermo Clark</p>
+</footer>
+
+</body>
+</html>
